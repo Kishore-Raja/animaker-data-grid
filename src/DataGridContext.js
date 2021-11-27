@@ -9,7 +9,19 @@ const DataGridContext = React.createContext({
     contentData: "",
     setContentData: () => { },
     contentCol: 0,
-    setContentCol: () => { }
+    setContentCol: () => { },
+    selectedRowCells: [],
+    setSelectedRowCells: () => { },
+    selectedColCells: [],
+    setSelectedColCells: () => { },
+    mouseDowned: false,
+    setMouseDowned: () => { },
+    copiedCells: [],
+    setCopiedCells: () => { },
+    multiCellCopied: false,
+    setMultiCellCopied: () => { },
+    keyAction: "",
+    setKeyAction: () => { },
 });
 
 export default DataGridContext;
